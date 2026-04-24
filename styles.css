@@ -1,0 +1,393 @@
+:root {
+  --bg: #071021;
+  --panel: rgba(18, 30, 55, 0.78);
+  --text: #e7f0ff;
+  --muted: #9db2ce;
+  --primary: #7d9cff;
+  --secondary: #43e7d1;
+  --accent: #ff8adb;
+  --border: rgba(157, 178, 206, 0.25);
+  --shadow: 0 20px 40px rgba(4, 10, 22, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 20%, #10254d, var(--bg) 42%);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(157, 178, 206, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(157, 178, 206, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.bg-orb {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(44px);
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.orb-1 {
+  width: 360px;
+  height: 360px;
+  background: #4d9eff;
+  top: -120px;
+  right: -80px;
+}
+
+.orb-2 {
+  width: 420px;
+  height: 420px;
+  background: #ff73d2;
+  bottom: -180px;
+  left: -110px;
+}
+
+.top-nav {
+  width: min(1200px, 96vw);
+  margin: 1rem auto;
+  padding: 0.8rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+  background: rgba(7, 16, 33, 0.7);
+  position: sticky;
+  top: 0.8rem;
+  z-index: 10;
+}
+
+.top-nav .brand {
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.top-nav nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.top-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+main {
+  width: min(1200px, 94vw);
+  margin: 1.4rem auto 4rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  margin: 0.5rem 0;
+  line-height: 1.1;
+}
+
+.hero-copy h1 span {
+  color: var(--secondary);
+}
+
+.eyebrow {
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 65ch;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1.2rem 0;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.68rem 1.15rem;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.solid-btn {
+  background: linear-gradient(110deg, var(--primary), #6279ff);
+}
+
+.ghost-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.metrics article {
+  background: rgba(67, 231, 209, 0.06);
+  border: 1px solid rgba(67, 231, 209, 0.25);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.metrics h3 {
+  margin: 0;
+}
+
+.metrics p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.hero-visual h2 {
+  margin-top: 0;
+}
+
+.mock-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.mock-grid div {
+  border: 1px solid rgba(125, 156, 255, 0.35);
+  border-radius: 12px;
+  padding: 0.7rem;
+  background: rgba(125, 156, 255, 0.08);
+}
+
+.mock-grid h4,
+.mock-grid p {
+  margin: 0;
+}
+
+.mock-grid p {
+  color: var(--muted);
+  margin-top: 0.45rem;
+  font-size: 0.88rem;
+}
+
+.content-section {
+  margin-top: 3.6rem;
+}
+
+.section-heading h2 {
+  margin-top: 0.3rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.card-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+ul {
+  color: var(--muted);
+  padding-left: 1.1rem;
+}
+
+li {
+  margin: 0.45rem 0;
+}
+
+.benefit-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.benefit-list p,
+.muted {
+  color: var(--muted);
+}
+
+.ontology-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr 300px;
+  gap: 0.9rem;
+}
+
+.controls,
+.details {
+  max-height: 580px;
+  overflow: auto;
+}
+
+.layer-pill {
+  display: inline-flex;
+  margin: 0.22rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.layer-pill.active {
+  background: rgba(67, 231, 209, 0.18);
+  border-color: rgba(67, 231, 209, 0.5);
+}
+
+.node-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.node-item {
+  text-align: left;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(157, 178, 206, 0.08);
+  padding: 0.45rem;
+  color: var(--text);
+}
+
+#graph {
+  width: 100%;
+  height: 580px;
+}
+
+.edge {
+  stroke: rgba(157, 178, 206, 0.42);
+  stroke-width: 1.5;
+}
+
+.edge.active {
+  stroke: rgba(67, 231, 209, 0.95);
+  stroke-width: 2.2;
+}
+
+.node circle {
+  fill: rgba(125, 156, 255, 0.95);
+  stroke: #dbe5ff;
+  stroke-width: 1;
+}
+
+.node text {
+  fill: var(--text);
+  font-size: 12px;
+}
+
+.node.dim {
+  opacity: 0.26;
+}
+
+.node.highlight circle {
+  fill: var(--accent);
+}
+
+.sim-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+select {
+  background: rgba(157, 178, 206, 0.12);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.55rem;
+}
+
+footer {
+  width: min(1200px, 94vw);
+  margin: 0 auto 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  padding-top: 1rem;
+}
+
+@media (max-width: 1040px) {
+  .hero,
+  .ontology-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics,
+  .card-grid.three,
+  .benefit-list,
+  .sim-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .top-nav nav {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .metrics,
+  .card-grid.three,
+  .benefit-list,
+  .sim-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .top-nav .ghost-btn {
+    display: none;
+  }
+}
