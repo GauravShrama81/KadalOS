@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kadal OS — Education Ontology Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+    <header class="top-nav">
+      <div class="brand">Kadal OS</div>
+      <nav>
+        <a href="#why">Why Ontology</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#graph">Interactive Model</a>
+        <a href="#capabilities">AI Future Stack</a>
+      </nav>
+      <button class="ghost-btn" id="modeToggle">Switch View</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <p class="eyebrow">Ontology-native infrastructure for K-12 + Higher Education</p>
+        <h1>
+          Build the <span>intelligence layer</span> that designs, runs, and upgrades
+          curriculum continuously.
+        </h1>
+        <p class="hero-copy">
+          Kadal OS turns education knowledge into a living ontology graph: standards,
+          competencies, concepts, pedagogies, assessments, content, learner evidence,
+          and policy constraints — all connected and computable.
+        </p>
+        <div class="hero-cta">
+          <a class="primary-btn" href="#graph">Explore the Ontology</a>
+          <a class="ghost-btn" href="#capabilities">See 2036 Capabilities</a>
+        </div>
+        <div class="hero-metrics">
+          <article>
+            <h3>1 Unified Graph</h3>
+            <p>Crosswalks standards, taxonomies, skills, and content metadata globally.</p>
+          </article>
+          <article>
+            <h3>Always Current</h3>
+            <p>Auto-detects drift in curriculum, policy, outcomes, and labor demand.</p>
+          </article>
+          <article>
+            <h3>AI-Native</h3>
+            <p>Every decision has context, provenance, and explainable ontology pathways.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="why" class="content-block">
+        <h2>Why education needs an ontology layer now</h2>
+        <div class="cards three">
+          <article class="card">
+            <h3>Fragmented systems</h3>
+            <p>
+              Standards, content libraries, LMS, assessments, and analytics live in silos.
+              Ontology creates a shared semantic backbone.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Static curriculum cycles</h3>
+            <p>
+              Most content refreshes are annual. Ontology enables continuous updates from
+              evidence, outcomes, and policy changes.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Low explainability in AI</h3>
+            <p>
+              Black-box recommendations can’t justify instructional decisions. Ontologies
+              provide traceable reasoning over explicit relationships.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="benefits" class="content-block">
+        <h2>Benefits for publishers, institutions, and learners</h2>
+        <div class="cards two">
+          <article class="card feature">
+            <h3>Publishers</h3>
+            <ul>
+              <li>Auto-map assets to standards and competencies across regions.</li>
+              <li>Detect gaps, overlap, and obsolete topics instantly.</li>
+              <li>Generate derivative products (courses, pathways, variants) safely.</li>
+            </ul>
+          </article>
+          <article class="card feature">
+            <h3>Schools & Universities</h3>
+            <ul>
+              <li>Build coherent pathways from K-12 foundations to degree outcomes.</li>
+              <li>Align instruction, assessment, interventions, and credentialing.</li>
+              <li>Support accreditation with auditable curriculum intelligence.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="graph" class="content-block graph-zone">
+        <div class="graph-header">
+          <h2>Comprehensive Ontology Explorer</h2>
+          <p>
+            Click any node to inspect object definitions, critical relationships, and
+            AI-powered operations enabled by that entity.
+          </p>
+        </div>
+        <div class="graph-layout">
+          <aside class="legend">
+            <h3>Ontology domains</h3>
+            <div id="legendItems"></div>
+          </aside>
+          <div class="graph-shell">
+            <svg id="ontologyGraph" viewBox="0 0 1000 700" role="img" aria-label="Kadal ontology graph"></svg>
+          </div>
+          <aside class="inspector" id="inspector">
+            <h3>Node Inspector</h3>
+            <p>Select a node to view schema and capabilities.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="capabilities" class="content-block capabilities">
+        <h2>2031–2036 AI capabilities unlocked by ontology-native education</h2>
+        <div class="cards three">
+          <article class="card capability">
+            <h3>Autonomous Curriculum Co-Pilots</h3>
+            <p>
+              Multi-agent systems simulate millions of pathway variants, optimize for equity,
+              rigor, and employability, then produce explainable recommendations.
+            </p>
+          </article>
+          <article class="card capability">
+            <h3>Real-Time Learning Digital Twins</h3>
+            <p>
+              Learner and cohort twins forecast misconception trajectories and prescribe
+              interventions before failure appears in summative assessments.
+            </p>
+          </article>
+          <article class="card capability">
+            <h3>Policy-to-Classroom Compiler</h3>
+            <p>
+              New standards and regulations are transformed into curriculum deltas, content
+              updates, and teacher guidance within days.
+            </p>
+          </article>
+          <article class="card capability">
+            <h3>Cross-Institution Credit Intelligence</h3>
+            <p>
+              Ontology-level equivalence reasoning enables trustworthy transfer pathways,
+              stackable credentials, and personalized graduation acceleration.
+            </p>
+          </article>
+          <article class="card capability">
+            <h3>Assessment as Continuous Evidence</h3>
+            <p>
+              Every learner interaction contributes calibrated evidence into mastery models,
+              reducing dependence on single high-stakes exams.
+            </p>
+          </article>
+          <article class="card capability">
+            <h3>Global Knowledge Sync</h3>
+            <p>
+              Curriculum automatically aligns to emerging disciplines (AI safety, climate tech,
+              bioinformatics) through ontology drift detection.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Kadal OS vision: a living ontology engine for next-generation education intelligence.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
