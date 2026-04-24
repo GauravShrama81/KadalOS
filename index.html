@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kadal OS Education Ontology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <header class="top-nav">
+      <div class="brand">Kadal OS</div>
+      <nav>
+        <a href="#problem">Why Ontology</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#ontology">Live Ontology</a>
+        <a href="#future">Future AI</a>
+      </nav>
+      <button class="ghost-btn">Request Architecture Brief</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">EDUCATION INTELLIGENCE LAYER</p>
+          <h1>
+            Build the living ontology for
+            <span>all curriculum intelligence</span>
+          </h1>
+          <p class="lead">
+            Kadal OS is a future-ready ontology system for K–12 and higher
+            education. It connects standards, outcomes, pedagogy, assessments,
+            modalities, compliance, and learner signals into one semantic
+            operating model for publishers.
+          </p>
+          <div class="hero-actions">
+            <button class="solid-btn">See Live Schema</button>
+            <button class="ghost-btn">Explore 2035 Capability Map</button>
+          </div>
+          <div class="metrics">
+            <article>
+              <h3>1 Ontology</h3>
+              <p>Across subjects, grades, regions, and product lines.</p>
+            </article>
+            <article>
+              <h3>∞ Learning Paths</h3>
+              <p>Generated through semantic relationships and AI reasoning.</p>
+            </article>
+            <article>
+              <h3>Real-time Upgrades</h3>
+              <p>
+                Curriculum and content updates driven by policy and outcomes.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="hero-visual panel">
+          <h2>Publishing Control Center</h2>
+          <div class="mock-grid">
+            <div>
+              <h4>Standards Sync</h4>
+              <p>47 regions aligned · 12 new mandates detected</p>
+            </div>
+            <div>
+              <h4>Concept Health</h4>
+              <p>94% mastery consistency across editions</p>
+            </div>
+            <div>
+              <h4>AI Authoring Agents</h4>
+              <p>18 active · 3 pending human review</p>
+            </div>
+            <div>
+              <h4>Intervention Signals</h4>
+              <p>8,240 at-risk clusters surfaced this week</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">WHY ONTOLOGY, NOT JUST CONTENT DATABASES</p>
+          <h2>Education is a relationship problem, not a storage problem.</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="panel">
+            <h3>Current State</h3>
+            <ul>
+              <li>Standards maps are disconnected from daily content.</li>
+              <li>Assessment and curriculum teams operate in silos.</li>
+              <li>Updates are manual, regional, and expensive.</li>
+              <li>AI tools hallucinate without structured knowledge.</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Ontology Shift</h3>
+            <ul>
+              <li>Every object has type, constraints, and semantic meaning.</li>
+              <li>Relationships become queryable and machine-reasonable.</li>
+              <li>Change propagation is automatic across all assets.</li>
+              <li>AI plans against explicit educational logic.</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Publisher Outcome</h3>
+            <ul>
+              <li>Faster launches with fewer compliance risks.</li>
+              <li>Cross-market reuse with local adaptation at scale.</li>
+              <li>Measurable learning impact tied to content lineage.</li>
+              <li>Continuous product improvement loops become native.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="benefits" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">VALUE STACK</p>
+          <h2>Compounding benefits from one shared semantic foundation.</h2>
+        </div>
+        <div class="benefit-list">
+          <article class="panel">
+            <h3>Semantic Interoperability</h3>
+            <p>
+              One ontology graph spans standards bodies, district requirements,
+              product metadata, pedagogy strategies, assessment evidence, and
+              learner profiles.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Composable AI Workflows</h3>
+            <p>
+              Agentic pipelines can draft lessons, generate variants, run bias
+              checks, predict mastery, and trigger human-in-the-loop approvals
+              using the same source of truth.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Adaptive Curriculum Operations</h3>
+            <p>
+              Policy changes, performance shifts, and market signals automatically
+              update affected curriculum components, with full auditability and
+              rationale tracking.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ontology" class="content-section ontology-section">
+        <div class="section-heading">
+          <p class="eyebrow">INTERACTIVE ONTOLOGY MAP</p>
+          <h2>Explore the core schema and object relationships.</h2>
+        </div>
+        <div class="ontology-layout">
+          <aside class="panel controls">
+            <h3>Ontology Layers</h3>
+            <div id="layerFilters"></div>
+            <h3>Node Explorer</h3>
+            <div id="nodeList" class="node-list"></div>
+          </aside>
+          <div class="panel graph-panel">
+            <svg id="graph" viewBox="0 0 900 580" aria-label="Ontology graph"></svg>
+          </div>
+          <aside class="panel details" id="detailsPanel">
+            <h3>Node Details</h3>
+            <p class="muted">Select a node to inspect schema role and AI usage.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="future" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">FUTURE CAPABILITY SIMULATOR</p>
+          <h2>What this ontology enables in 5–10 years with AI orchestration.</h2>
+        </div>
+        <div class="panel simulator">
+          <div class="sim-controls">
+            <label>
+              Horizon
+              <select id="horizonSelect">
+                <option value="2030">2030: Near-Future</option>
+                <option value="2035" selected>2035: Transformative</option>
+                <option value="2040">2040: Autonomous Learning Systems</option>
+              </select>
+            </label>
+            <label>
+              Primary Stakeholder
+              <select id="personaSelect">
+                <option value="publisher">Global Publisher</option>
+                <option value="district">District Network</option>
+                <option value="university">University System</option>
+                <option value="government">National Education Authority</option>
+              </select>
+            </label>
+          </div>
+          <div id="scenarioCards" class="card-grid three"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Kadal OS · Ontology-first operating system for intelligent curriculum,
+        publishing, and learning ecosystems.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
